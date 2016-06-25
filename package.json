@@ -4,8 +4,20 @@
   "description": "A minimal Webpack project to teach you how to set up a new project",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Error: no build script specified\" && exit 1"
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.config.prod.js"
   },
   "author": "Ian Sinnott <ian@iansinnott.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
 }
